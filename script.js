@@ -51,7 +51,7 @@ function updateAvatar() {
   if (avatarImage > 17) {
     avatarImage = 1;
   }
-  avatarElement.src = "img/avatar/c" + avatarImage + ".png";
+  avatarElement.src = "img/Avatar/c" + avatarImage + ".png";
   avatarImage++;
 }
 
