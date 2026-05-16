@@ -1,0 +1,70 @@
+export const skillGroups = [
+  {
+    name: "Cybersecurity",
+    skills: [
+      "Snort",
+      "MITRE ATT&CK",
+      "OSINT",
+      "IOC/TTP research",
+      "Static analysis",
+      "Dynamic analysis",
+      "Passive analysis",
+      "Field Effect MDR",
+      "Security alert review",
+      "Firewall management",
+      "CMMC/NIST 800-171 awareness",
+    ],
+  },
+  {
+    name: "Networking",
+    skills: [
+      "VLANs/802.1Q",
+      "802.1X",
+      "OSPF",
+      "EIGRP",
+      "BGP",
+      "HSRP/VRRP",
+      "ACLs",
+      "NAT",
+      "DHCP relay",
+      "DNS",
+      "IPsec/VPN",
+      "PCAP analysis",
+    ],
+  },
+  {
+    name: "Scripting & Automation",
+    skills: ["Python", "PowerShell", "Bash", "Report automation", "Workbook processing"],
+  },
+  {
+    name: "Data & Reporting",
+    skills: ["Power BI", "Power Query", "DAX", "Excel", "PivotTables", "KPI dashboards"],
+  },
+  {
+    name: "Platforms & Virtualization",
+    skills: [
+      "Azure DevOps",
+      "OpenShift/ARO",
+      "Kubernetes fundamentals",
+      "VMware",
+      "ESXi",
+      "Hyper-V",
+      "VirtualBox",
+    ],
+  },
+  {
+    name: "Systems & Identity",
+    skills: ["Active Directory", "Microsoft 365", "Exchange", "Event Viewer"],
+  },
+  {
+    name: "Collaboration & Delivery",
+    skills: [
+      "Git/Gitea",
+      "Jira",
+      "Microsoft Teams",
+      "Agile/Scrum",
+      "Technical documentation",
+      "Triage",
+    ],
+  },
+];

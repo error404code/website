@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build portfolio site",
+      "type": "shell",
+      "command": "C:\\Users\\georg\\AppData\\Local\\OpenAI\\Codex\\bin\\node.exe",
+      "args": ["scripts\\build-site.mjs"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
