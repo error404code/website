@@ -2,6 +2,9 @@
 import "../styles/global.css";
 
 const { title, description } = Astro.props;
+const siteUrl = Astro.site ?? new URL("https://george-girgis.com");
+const pageUrl = new URL(Astro.url.pathname, siteUrl).toString();
+const socialImage = new URL("/img/social-preview.png", siteUrl).toString();
 ---
 
 <!DOCTYPE html>
@@ -11,6 +14,20 @@ const { title, description } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta name="description" content={description} />
+    <link rel="canonical" href={pageUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="George Girgis" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={pageUrl} />
+    <meta property="og:image" content={socialImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
+    <meta property="og:image:alt" content="George Girgis portfolio website preview" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImage} />
     <title>{title}</title>
     <link rel="icon" href="/img/globe.png" type="image/png" />
     <script is:inline>
