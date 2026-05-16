@@ -6,20 +6,36 @@ Live site:
 
 https://george-girgis.com
 
+## Stack
+
+- Astro
+- Tailwind CSS via the Vite plugin
+- Centralized content in `src/data/*.js`
+
 ## Local Workflow
 
 Most public-facing content is centralized under `src/data`.
 
 - `src/data/profile.js`: name, summary, links, highlights, resume path
-- `src/data/projects.js`: featured case studies
+- `src/data/projects.js`: featured projects
 - `src/data/experience.js`: concise work timeline
 - `src/data/skills.js`: grouped technical skills
-- `media/early-technical-demo.mp4`: self-hosted demo video used by the native video player
+- `src/data/demo.js`: embedded demo video content and URLs
 
-After editing the data files, regenerate the homepage:
+Start the Astro dev server:
 
 ```powershell
-node scripts\build-site.mjs
+.\.tools\node-v24.15.0-win-x64\node.exe scripts\astro-cli.mjs dev --host 0.0.0.0 --port 4321
 ```
 
-The generated page is `index.html`, which keeps the site compatible with GitHub Pages static hosting.
+Create a production build:
+
+```powershell
+.\.tools\node-v24.15.0-win-x64\node.exe scripts\astro-cli.mjs build
+```
+
+## GitHub Pages
+
+The Astro deployment workflow is in `.github/workflows/deploy.yml`.
+
+To use the Astro build on your live domain, set the repository's Pages source to `GitHub Actions`.

@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@400;500;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --bg: #f6f3ee;
+  --bg-muted: #e8edf0;
+  --surface: #ffffff;
+  --header: #f6f3ee;
+  --ink: #171b1f;
+  --muted: #5d6770;
+  --line: #cfd7dd;
+  --accent: #1f6f5b;
+  --accent-strong: #155342;
+  --accent-soft: #dcefe8;
+  --gold: #b7791f;
+  --night: #101318;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #101318;
+  --bg-muted: #171d23;
+  --surface: #1d252c;
+  --header: #101318;
+  --ink: #f4f7f9;
+  --muted: #b9c4cc;
+  --line: #35434d;
+  --accent: #55c7ad;
+  --accent-strong: #8ee4cf;
+  --accent-soft: #143d36;
+  --gold: #f7d690;
+  --night: #080a0d;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Manrope", ui-sans-serif, system-ui, sans-serif;
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  }
+
+  a,
+  button {
+    transition:
+      color 180ms ease,
+      border-color 180ms ease,
+      background-color 180ms ease,
+      transform 180ms ease,
+      box-shadow 180ms ease;
+  }
+}
+
+@layer components {
+  .brand-mark {
+    @apply inline-grid h-9 w-9 place-items-center border text-[0.78rem] font-black tracking-tight;
+    border-color: var(--ink);
+    background: var(--ink);
+    color: white;
+  }
+
+  :root[data-theme="dark"] .brand-mark {
+    border-color: #f4f7f9;
+    background: #f4f7f9;
+    color: #080a0d;
+  }
+
+  .hero-shell::before {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    content: "";
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+    background-size: 44px 44px;
+    mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0.85), transparent 82%);
+  }
+
+  .section-shell {
+    @apply px-5 py-16 md:px-8 lg:py-24;
+  }
+
+  .section-head {
+    @apply mx-auto mb-10 max-w-4xl;
+  }
+
+  .eyebrow {
+    @apply text-xs font-black uppercase tracking-[0.08em];
+    color: var(--accent);
+  }
+
+  .section-title {
+    @apply mt-2 text-balance text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl;
+    color: var(--ink);
+  }
+
+  .section-copy {
+    @apply mt-4 max-w-3xl text-lg leading-8;
+    color: var(--muted);
+  }
+
+  .surface-card {
+    @apply rounded-lg border;
+    border-color: var(--line);
+    background: var(--surface);
+    box-shadow: 0 18px 45px rgba(16, 19, 24, 0.12);
+  }
+
+  :root[data-theme="dark"] .surface-card,
+  :root[data-theme="dark"] .surface-video {
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+  }
+
+  .tag-chip {
+    @apply inline-flex items-center rounded-full border px-3 py-1.5 text-xs font-extrabold;
+    border-color: #b9cbc4;
+    background: var(--accent-soft);
+    color: var(--accent-strong);
+  }
+
+  .button-primary {
+    @apply inline-flex min-h-11 items-center justify-center rounded-md border px-4 py-2.5 text-sm font-black no-underline;
+    border-color: var(--accent);
+    background: var(--accent);
+    color: white;
+  }
+
+  .button-primary:hover {
+    transform: translateY(-2px);
+    background: var(--accent-strong);
+  }
+
+  :root[data-theme="dark"] .button-primary {
+    border-color: #7de6cf;
+    background: #7de6cf;
+    color: #07100d;
+  }
+
+  :root[data-theme="dark"] .button-primary:hover {
+    background: #9df0dc;
+  }
+
+  .button-secondary {
+    @apply inline-flex min-h-11 items-center justify-center rounded-md border px-4 py-2.5 text-sm font-black no-underline;
+    border-color: currentColor;
+    color: inherit;
+    background: transparent;
+  }
+
+  .button-secondary:hover {
+    transform: translateY(-2px);
+  }
+
+  .surface-video {
+    @apply block w-full rounded-lg border object-cover;
+    max-width: 980px;
+    aspect-ratio: 16 / 9;
+    border-color: var(--line);
+    background: var(--night);
+    box-shadow: 0 18px 45px rgba(16, 19, 24, 0.12);
+  }
+
+  .timeline-line {
+    position: absolute;
+    top: 14px;
+    left: 6px;
+    width: 1px;
+    height: calc(100% + 148px);
+    background: var(--line);
+    content: "";
+  }
+}

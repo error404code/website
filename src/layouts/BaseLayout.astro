@@ -1,0 +1,29 @@
+---
+import "../styles/global.css";
+
+const { title, description } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="icon" href="/img/globe.png" type="image/png" />
+    <script is:inline>
+      try {
+        const savedTheme = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.dataset.theme = savedTheme || (prefersDark ? "dark" : "light");
+      } catch {
+        document.documentElement.dataset.theme = "light";
+      }
+    </script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

@@ -2,10 +2,20 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Build portfolio site",
+      "label": "Astro dev",
       "type": "shell",
-      "command": "C:\\Users\\georg\\AppData\\Local\\OpenAI\\Codex\\bin\\node.exe",
-      "args": ["scripts\\build-site.mjs"],
+      "command": "${workspaceFolder}\\.tools\\node-v24.15.0-win-x64\\node.exe",
+      "args": ["scripts\\astro-cli.mjs", "dev", "--host", "0.0.0.0", "--port", "4321"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Astro build",
+      "type": "shell",
+      "command": "${workspaceFolder}\\.tools\\node-v24.15.0-win-x64\\node.exe",
+      "args": ["scripts\\astro-cli.mjs", "build"],
       "options": {
         "cwd": "${workspaceFolder}"
       },
