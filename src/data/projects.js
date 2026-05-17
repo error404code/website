@@ -3,11 +3,11 @@ export const projects = [
     title: "Nokia RTU Report Builder",
     eyebrow: "Automation project",
     summary:
-      "I worked on a Python desktop application that automates RTU Excel reporting by combining BW, PWR, and region workbooks into a repeatable masterfile workflow.",
+      "In collaboration with a colleague, I helped design and develop a Python desktop application that automates RTU Excel reporting by combining BW, PWR, and region workbooks into a repeatable masterfile workflow.",
     impact: [
       "Automated workbook ingestion, cleanup, merging, and output generation across multiple Excel sources",
       "Normalized bandwidth and power data, resolved duplicate rows, and generated more consistent report tables",
-      "Added MRBTS-based filtering and packaged the workflow into a desktop app so teams could rerun scoped outputs without manual Excel work",
+      "Added MRBTS-based filtering and packaged the app for desktop use so non-technical users could run the workflow without touching the code",
     ],
     stack: ["Python", "Pandas", "Excel automation", "Desktop app", "Tkinter"],
   },
