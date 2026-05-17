@@ -22,13 +22,13 @@ export const profile = {
     {
       label: "CCNP Security",
       detail: "Cisco certification",
-      linkLabel: "View Credly",
+      linkLabel: "View badge",
       link: "https://www.credly.com/badges/e0727377-95b2-4a41-a3d7-8dec98e0ba5b",
     },
     {
       label: "CCNA",
       detail: "Cisco certification",
-      linkLabel: "View Credly",
+      linkLabel: "View badge",
       link: "https://www.credly.com/badges/2bf47ed0-4d73-458e-b25e-03d74ab2fcaf",
     },
     {
