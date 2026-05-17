@@ -23,13 +23,13 @@ export const profile = {
       label: "CCNP Security",
       detail: "Cisco certification",
       linkLabel: "View Credly",
-      link: "https://www.credly.com/users/george-girgis.4ff5526f",
+      link: "https://www.credly.com/badges/e0727377-95b2-4a41-a3d7-8dec98e0ba5b",
     },
     {
       label: "CCNA",
       detail: "Cisco certification",
       linkLabel: "View Credly",
-      link: "https://www.credly.com/users/george-girgis.4ff5526f",
+      link: "https://www.credly.com/badges/2bf47ed0-4d73-458e-b25e-03d74ab2fcaf",
     },
     {
       label: "Nokia Cloud RAN Solution Certification",
