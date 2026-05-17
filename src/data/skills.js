@@ -29,7 +29,7 @@ export const skillGroups = [
       "DHCP relay",
       "DNS",
       "IPsec/VPN",
-      "PCAP analysis",
+      "Wireshark/PCAP analysis",
     ],
   },
   {

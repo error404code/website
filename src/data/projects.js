@@ -3,13 +3,13 @@ export const projects = [
     title: "Nokia RTU Report Builder",
     eyebrow: "Automation project",
     summary:
-      "I worked on a Python desktop application that turns a repetitive Excel reporting process into a more consistent guided workflow.",
+      "I worked on a Python desktop application that automates RTU Excel reporting by combining BW, PWR, and region workbooks into a repeatable masterfile workflow.",
     impact: [
-      "Designed around real reporting pain points: repeated filtering, workbook preparation, and output consistency",
-      "Helped turn a manual process into a tool-driven workflow that is easier to rerun",
-      "Packaged the app for desktop use so non-developers could use the workflow without touching the code",
+      "Automated workbook ingestion, cleanup, merging, and output generation across multiple Excel sources",
+      "Normalized bandwidth and power data, resolved duplicate rows, and generated more consistent report tables",
+      "Added MRBTS-based filtering and packaged the workflow into a desktop app so teams could rerun scoped outputs without manual Excel work",
     ],
-    stack: ["Python", "Workbook processing", "Desktop packaging", "Workflow design"],
+    stack: ["Python", "Pandas", "Excel automation", "Desktop app", "Tkinter"],
   },
   {
     title: "Network Latency Dashboard",
@@ -33,6 +33,6 @@ export const projects = [
       "Mapped behaviors to MITRE ATT&CK tactics and techniques",
       "Used static, dynamic, and passive analysis to support detection quality",
     ],
-    stack: ["Snort", "MITRE ATT&CK", "OSINT", "PCAP", "Malware analysis"],
+    stack: ["Snort", "MITRE ATT&CK", "OSINT", "Wireshark", "Malware analysis"],
   },
 ];
