@@ -5,7 +5,7 @@ export const experience = [
     location: "Toronto, ON",
     dates: "Aug 2025 - Present",
     points: [
-      "Helped prevent customer connectivity issues, and audio gap, via mitigation of MTU, duplex, and DSCP mismatches",
+      "Helped prevent customer connectivity and audio-quality issues by identifying MTU, duplex, and DSCP/QoS mismatches",
       "Collected KPI and log data through secure remote access and supported troubleshooting and escalation workflows",
       "Built Power BI dashboards and collaborated on Python automation for Excel-based reporting",
     ],
