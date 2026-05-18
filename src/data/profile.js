@@ -1,10 +1,10 @@
 export const profile = {
   name: "George Girgis",
-  title: "Cybersecurity, Network Operations, and Automation",
+  title: "Telecom Network Operations, Troubleshooting, and Automation",
   location: "Toronto, ON",
   email: "georgesameh01@outlook.com",
   summary:
-    "I work at the intersection of cybersecurity, network operations, and automation. My recent work includes customer network readiness support at Nokia, malware signature research, IT support in security-conscious environments, Power BI reporting, and Python tools that make operational workflows easier to repeat.",
+    "I work across telecom network operations, technical troubleshooting, data analytics, and automation. My recent work includes customer network readiness activities at Nokia, IP design and deployment validation, real-time gNB trace collection during customer testing, daily KPI reports, technical documentation, Power BI dashboards, and Python automation. I also bring prior experience in cybersecurity research and IT infrastructure support.",
   resumePath: "Resume/George_Girgis_Resume.pdf",
   links: {
     github: "https://github.com/error404code",
